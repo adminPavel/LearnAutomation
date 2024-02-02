@@ -19,8 +19,8 @@ public class SearchTest extends BaseTest{
   Thread.sleep(3000);
   WebElement resultRow = getWebDriver().findElement(By.xpath("//div[@class='g']//h3"));
   assertThat(resultRow.isDisplayed()).as("Element has not been displayed!").isTrue();
-  assertThat(resultRow.getText()).as("Wrong text has been displayed!").isEqualTo("Selenium WebDriver - Selenium Document");
-
+  assertThat(resultRow.getText()).as("Wrong text has been displayed!").isEqualTo(resultRow);
+  assertThat(resultRow.getAttribute("class")).as("Wrong attribute text!").contains("LC201b");
  }
 
 

@@ -36,6 +36,6 @@ public abstract class BaseTest {
     }
     @DataProvider(name = "dataProvider")
     public Object[][] dataProviderMethod() {
-        return new Object[][]{{"selenium java"}, {"selenium javascript"}};
+        return new Object[][]{{"selenium"}, {"selenium javascript"}};
     }
 }
